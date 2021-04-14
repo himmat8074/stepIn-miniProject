@@ -2,7 +2,8 @@
 
 int main()
 {
-    printf("Welcome to HSR Bus Pass! \n");
+    printf("\n---------------------------------------------\n");
+    printf("Welcome to HSR Bus Pass Application! \n");
     displayLogin();
 
     return 0;

@@ -51,8 +51,19 @@ typedef struct user
     char passcode[21];
 }user;
 
+/**
+ * @brief function declarations
+ * 
+ */
 void displayLogin(); 
 void display_signIn(user *);
 void display_register(user *);
+void display_mainMenu();
+
+//continue working from here
+void display_busList(); 
+void bookTicket(); 
+void cancelBooking(); 
+void viewAvailbleSeats();
 
 #endif
