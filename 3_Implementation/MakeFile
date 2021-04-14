@@ -1,0 +1,9 @@
+PROJ_NAME = busPass_proj
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
+
+SRC = src/login_module/login.c \
+src/login_module/register.c \
+src/login_module/signIn.c 
+
+cppcheck: 
+	cppcheck --enable=all $(SRC) main.c
