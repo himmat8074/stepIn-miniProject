@@ -11,14 +11,14 @@ void display_mainMenu()
         printf("\t 2. Book Tickets \n\n");
         printf("\t 3. Cancel Booking \n\n");
         printf("\t 4. View Available Seats \n\n");
-        printf("\t 5. Exit the Application. \n\n"); 
+        printf("\t 5. Exit the Application \n\n"); 
 
         scanf("%d",&choice);
 
         switch (choice)
         {
-        case 1: display_busList(); break;
-        case 2: bookTicket(); break;
+        case 1: display_busList(bus *ptr); break;
+        case 2: bookTicket(bus *ptr); break;
         case 3: cancelBooking(); break;
         case 4: viewAvailbleSeats(); break;
         

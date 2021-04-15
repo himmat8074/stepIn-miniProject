@@ -14,7 +14,7 @@ void login()
     {
         case 1: display_register(user *ptr); break;
         case 2: display_signIn(user *ptr); break;
-        case 3; exit(0); break;
+        case 3: exit(0); break;
         default: printf("\n Invalid input, try again."); displayLogin();
     }
 }

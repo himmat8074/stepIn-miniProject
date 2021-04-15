@@ -36,9 +36,18 @@ typedef enum error_t{
 typedef struct bus
 {
     /* data */
-    int bus_id;
-    char bus_name[101];
-    int bus_number;
+    int bus_id[11] = {"1", "2","3","4","5","6","7","8" };
+    char bus_name[11][101] = { "Valhalla Express",
+        "Odin Express",
+        "Thor Express",
+        "Loki Express",
+        "Freyr Express",
+        "Freya Express",
+        "Frig Express",
+        "Balder Express"   
+    };
+    char bus_number[11][21] = { "VK2001",
+    "VK2002", "VK2003", "VK2004", "VK2005", "VK2006", "VK2007", "VK2008" };
 }bus;
 
 /**
@@ -59,10 +68,11 @@ void displayLogin();
 void display_signIn(user *);
 void display_register(user *);
 void display_mainMenu();
+void display_busList(bus *); 
+void view_seatStatus(int busNo);
 
-//continue working from here
-void display_busList(); 
-void bookTicket(); 
+void bookTicket(bus *);
+
 void cancelBooking(); 
 void viewAvailbleSeats();
 
